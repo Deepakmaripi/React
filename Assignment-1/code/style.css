@@ -1,1 +1,42 @@
-
+.container{
+    width: auto;
+    height:auto;
+}
+.row{
+    width:auto;
+    display: block;
+}
+.yellow, .pink, .blue{
+    display:flex;
+}
+.yellow .content, .pink .content, .blue .content{
+    margin: 10px;
+    height: 200px;
+}
+.yellow .content {
+    background-color: orange;
+}
+.pink .content {
+    background-color: pink;
+}
+.blue .content {
+    background-color:lightblue;
+}
+@media screen and (min-device-width:1024px){
+    .yellow .content, .pink .content, .blue .content{
+        flex: 1 1 auto;
+    }
+}
+@media screen and (min-device-width:768px) and (max-device-width:1023px){
+    .yellow .content, .pink .content{
+        flex: 1 1 auto;
+    }
+    .blue {
+        flex-direction: column;
+    }
+}
+@media screen and (min-device-width:320px) and (max-device-width:767px){
+    .yellow, .pink, .blue{
+        flex-direction: column;
+    }
+}
