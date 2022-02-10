@@ -8,7 +8,7 @@
 }
 .yellow, .pink, .blue{
     display:flex;
-}
+}  
 .yellow .content, .pink .content, .blue .content{
     margin: 10px;
     height: 200px;
