@@ -9,12 +9,30 @@
 <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 <!-- Don't use this in production: -->
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-</head>
+</head> 
 <body>
     <div id="root"></div>
     <script type="text/babel">
 //React Code here
- ReactDOM.render(<div></div>,document.getElementById('root'));
+const ResponsiveUI = ({props})=>{
+      return (
+        <div className="container">
+          <div className="row yellow">
+            <div className="content"></div>
+            <div className="content"></div>
+          </div>
+          <div className="row pink">
+            <div className="content"></div>
+          </div>
+          <div className="row blue">
+            <div className="content"></div>
+            <div className="content"></div>
+            <div className="content"></div>  
+          </div>
+        </div>
+      )
+    }   
+ ReactDOM.render(<ResponsiveUI></ResponsiveUI>,document.getElementById('root'));
 
 </script>
 <!--
