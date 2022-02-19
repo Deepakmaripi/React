@@ -1,6 +1,3 @@
-.site-container{
-  text-align: center;
-}
 html {
   font-size: 14px;
 }
@@ -9,3 +6,85 @@ body {
   color: black;
   margin:0;
 } 
+*{
+  margin: 0;
+  padding: 0%;
+}
+h1{
+  font-family: palatino;
+  font-size: 60px;
+  font-weight:normal;
+  color: #006238;
+}
+.navbar{
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(243, 243, 243);
+  padding: 15px;
+  border-bottom: 3px solid #A2BDB2;
+}
+.pic{
+  margin-left: 50px;
+}
+.name{
+  position: absolute;
+  left:125px;
+}
+.camera{
+  position: absolute;
+  right: 90px;
+  vertical-align: middle;
+}
+.main-info {
+  width: 100%;
+  height: inherit;
+  display: flex;
+}
+section {
+  border-radius: 3px;
+  border: 1px solid #BEBEBE;
+  width: 36%;
+  height: inherit;
+}
+aside {
+  width: 32%;
+  background-color: #FFFFFF;
+  height: inherit;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+}
+.image-container img {
+  width: 100%;
+}
+footer {
+  padding: 0 20px;
+}
+.likes-share-date {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+footer h2 {
+  padding: 15px 0 25px 0;
+}
+.pic img{
+  border-radius: 50%;
+}
+.camera img{
+  width: 100px;
+  height: 80px;
+}
+.dots img{
+  width: 70px;
+  height: 30px;
+}
+.like-share img {
+  margin-right: 15px;
+  width: 42px;
+  height: 42px;
+}
